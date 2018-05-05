@@ -12,6 +12,7 @@
 		37B2E07F209DED1A00114489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B2E07D209DED1A00114489 /* Main.storyboard */; };
 		37B2E081209DED1B00114489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B2E080209DED1B00114489 /* Assets.xcassets */; };
 		37B2E084209DED1B00114489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B2E082209DED1B00114489 /* LaunchScreen.storyboard */; };
+		37B2E08C209DF8F100114489 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B2E08B209DF8F100114489 /* Default-568h@2x.png */; };
 		EAB1D271385C67BCAF818A71 /* Pods_iBeaconPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F157664DBB7D7C1A45F912F3 /* Pods_iBeaconPOC.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		37B2E080209DED1B00114489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B2E083209DED1B00114489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B2E085209DED1B00114489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B2E08B209DF8F100114489 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F157664DBB7D7C1A45F912F3 /* Pods_iBeaconPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBeaconPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,6 +45,7 @@
 		37B2E06D209DED1A00114489 = {
 			isa = PBXGroup;
 			children = (
+				37B2E08B209DF8F100114489 /* Default-568h@2x.png */,
 				37B2E078209DED1A00114489 /* iBeaconPOC */,
 				37B2E077209DED1A00114489 /* Products */,
 				5A5B8D408F68ADF84EBACB20 /* Pods */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B2E084209DED1B00114489 /* LaunchScreen.storyboard in Resources */,
+				37B2E08C209DF8F100114489 /* Default-568h@2x.png in Resources */,
 				37B2E081209DED1B00114489 /* Assets.xcassets in Resources */,
 				37B2E07F209DED1A00114489 /* Main.storyboard in Resources */,
 			);
@@ -355,7 +359,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Y789C28ZZ;
 				INFOPLIST_FILE = iBeaconPOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.ghisla.iBeaconPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -371,7 +378,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Y789C28ZZ;
 				INFOPLIST_FILE = iBeaconPOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.ghisla.iBeaconPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

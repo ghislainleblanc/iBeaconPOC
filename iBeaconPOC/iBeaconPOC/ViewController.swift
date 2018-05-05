@@ -11,7 +11,7 @@ import CoreLocation
 import CocoaLumberjack
 
 struct Constants {
-    static let iBeaconUUID = "E33A1F47-547C-45AC-923D-F6821E6E7D3E"
+    static let iBeaconUUID = "594650A2-8621-401F-B5DE-6EB3EE398170"
     static let iBeaconMajorValue: UInt16 = 0x0000
     static let iBeaconMinorValue: UInt16 = 0x0000
     static let iBeaconIdentifier = "iBeacon"
@@ -67,5 +67,33 @@ extension ViewController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         DDLogError("Location manager failed: \(error.localizedDescription)")
+    }
+
+    func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
+        for beacon in beacons {
+            switch beacon.proximity {
+            case .far:
+                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is far (\(beacon.accuracy.string(fractionDigits: 2))m).")
+            case .near:
+                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is near (\(beacon.accuracy.string(fractionDigits: 2))m).")
+            case .immediate:
+                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is immediate (\(beacon.accuracy.string(fractionDigits: 2))m).")
+            default:
+                break
+            }
+        }
+    }
+
+    func locationManager(_ manager: CLLocationManager, rangingBeaconsDidFailFor region: CLBeaconRegion, withError error: Error) {
+        DDLogError("Failed ranging beacons: \(error.localizedDescription)")
+    }
+}
+
+extension Double {
+    func string(fractionDigits:Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = fractionDigits
+        formatter.maximumFractionDigits = fractionDigits
+        return formatter.string(from: NSNumber(value: self)) ?? "\(self)"
     }
 }
