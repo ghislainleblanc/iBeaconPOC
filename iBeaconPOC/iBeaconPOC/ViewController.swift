@@ -73,11 +73,11 @@ extension ViewController: CLLocationManagerDelegate {
         for beacon in beacons {
             switch beacon.proximity {
             case .far:
-                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is far (\(beacon.accuracy.string(fractionDigits: 2))m).")
+                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is far (\(beacon.accuracy.string(fractionDigits: 2))m, \(beacon.rssi)dB).")
             case .near:
-                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is near (\(beacon.accuracy.string(fractionDigits: 2))m).")
+                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is near (\(beacon.accuracy.string(fractionDigits: 2))m, \(beacon.rssi)dB).")
             case .immediate:
-                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is immediate (\(beacon.accuracy.string(fractionDigits: 2))m).")
+                DDLogInfo("beacon: \(beacon.major), \(beacon.minor)" + " is immediate (\(beacon.accuracy.string(fractionDigits: 2))m, \(beacon.rssi)dB).")
             default:
                 break
             }
@@ -90,7 +90,7 @@ extension ViewController: CLLocationManagerDelegate {
 }
 
 extension Double {
-    func string(fractionDigits:Int) -> String {
+    func string(fractionDigits: Int) -> String {
         let formatter = NumberFormatter()
         formatter.minimumFractionDigits = fractionDigits
         formatter.maximumFractionDigits = fractionDigits
