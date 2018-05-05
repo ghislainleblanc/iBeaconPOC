@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.7.1)
+  - CocoaLumberjack (3.4.1):
+    - CocoaLumberjack/Default (= 3.4.1)
+    - CocoaLumberjack/Extensions (= 3.4.1)
+  - CocoaLumberjack/Default (3.4.1)
+  - CocoaLumberjack/Extensions (3.4.1):
+    - CocoaLumberjack/Default
+  - CocoaLumberjack/Swift (3.4.1):
+    - CocoaLumberjack/Default
+  - LumberjackConsole (3.3.0):
+    - CocoaLumberjack (>= 3.x)
+    - NBUCore (>= 2.1.0)
+  - NBUCore (2.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CocoaLumberjack/Swift
+  - LumberjackConsole
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - LumberjackConsole
+    - NBUCore
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
+  LumberjackConsole: 1837f5266a9b7052aebc6d6d8c9daa8bdc01b75d
+  NBUCore: 201af50441f48513ef6d5823a5fc12c9e1f288cd
+
+PODFILE CHECKSUM: 54a47709805e01b0c7145777e967b6b821577d14
+
+COCOAPODS: 1.5.0

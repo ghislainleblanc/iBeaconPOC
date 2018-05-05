@@ -12,9 +12,12 @@
 		37B2E07F209DED1A00114489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B2E07D209DED1A00114489 /* Main.storyboard */; };
 		37B2E081209DED1B00114489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B2E080209DED1B00114489 /* Assets.xcassets */; };
 		37B2E084209DED1B00114489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B2E082209DED1B00114489 /* LaunchScreen.storyboard */; };
+		EAB1D271385C67BCAF818A71 /* Pods_iBeaconPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F157664DBB7D7C1A45F912F3 /* Pods_iBeaconPOC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F76A12B1DE48CDA0A29113B /* Pods-iBeaconPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeaconPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBeaconPOC/Pods-iBeaconPOC.release.xcconfig"; sourceTree = "<group>"; };
+		2F9CD21719BDC0EF0C81A519 /* Pods-iBeaconPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeaconPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iBeaconPOC/Pods-iBeaconPOC.debug.xcconfig"; sourceTree = "<group>"; };
 		37B2E076209DED1A00114489 /* iBeaconPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B2E079209DED1A00114489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B2E07B209DED1A00114489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		37B2E080209DED1B00114489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B2E083209DED1B00114489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B2E085209DED1B00114489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F157664DBB7D7C1A45F912F3 /* Pods_iBeaconPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBeaconPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB1D271385C67BCAF818A71 /* Pods_iBeaconPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				37B2E078209DED1A00114489 /* iBeaconPOC */,
 				37B2E077209DED1A00114489 /* Products */,
+				5A5B8D408F68ADF84EBACB20 /* Pods */,
+				8F255EB9154F6C7174F852EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = iBeaconPOC;
 			sourceTree = "<group>";
 		};
+		5A5B8D408F68ADF84EBACB20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F9CD21719BDC0EF0C81A519 /* Pods-iBeaconPOC.debug.xcconfig */,
+				0F76A12B1DE48CDA0A29113B /* Pods-iBeaconPOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F255EB9154F6C7174F852EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F157664DBB7D7C1A45F912F3 /* Pods_iBeaconPOC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37B2E088209DED1B00114489 /* Build configuration list for PBXNativeTarget "iBeaconPOC" */;
 			buildPhases = (
+				4F599021E394B1D416B8A38E /* [CP] Check Pods Manifest.lock */,
 				37B2E072209DED1A00114489 /* Sources */,
 				37B2E073209DED1A00114489 /* Frameworks */,
 				37B2E074209DED1A00114489 /* Resources */,
+				701C504B3713C65DEFCF3492 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F599021E394B1D416B8A38E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iBeaconPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		701C504B3713C65DEFCF3492 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iBeaconPOC/Pods-iBeaconPOC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/LumberjackConsole/LumberjackConsole.framework",
+				"${BUILT_PRODUCTS_DIR}/NBUCore/NBUCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LumberjackConsole.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NBUCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBeaconPOC/Pods-iBeaconPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37B2E072209DED1A00114489 /* Sources */ = {
@@ -278,15 +349,13 @@
 		};
 		37B2E089209DED1B00114489 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9CD21719BDC0EF0C81A519 /* Pods-iBeaconPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Y789C28ZZ;
 				INFOPLIST_FILE = iBeaconPOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.ghisla.iBeaconPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +365,13 @@
 		};
 		37B2E08A209DED1B00114489 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F76A12B1DE48CDA0A29113B /* Pods-iBeaconPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Y789C28ZZ;
 				INFOPLIST_FILE = iBeaconPOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.ghisla.iBeaconPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
